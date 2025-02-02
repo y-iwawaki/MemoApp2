@@ -1,13 +1,14 @@
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet, type ViewStyle } from 'react-native'
 
 interface Props{
-    children:string
+    children:JSX.Element
+    style?: ViewStyle
 }
 
 const CircleButton = (props:Props):JSX.Element => {
-    const { children } =props
+    const { children, style } =props
     return(
-             <View style={styles.circleBotton}>
+             <View style={[styles.circleBotton, style]}>
                   <Text style={styles.circleBottonLabel}>{ children }</Text>
              </View>
     )
@@ -18,12 +19,12 @@ const styles =StyleSheet.create({
         width:64,
         height:64,
         borderRadius:32,
-        backgroundColor:'#467FD3',
+        backgroundColor:'rgb(83, 146, 240)',
         justifyContent:'center',
         alignItems:'center',
         position:'absolute',
         right:40,
-        bottom:40, 
+        bottom:40,
         shadowColor:'rgb(8, 4, 4)',
         shadowOpacity:0.25,
         shadowRadius:8,
@@ -31,7 +32,7 @@ const styles =StyleSheet.create({
         elevation:8
        },
        circleBottonLabel:{
-        color:'rgb(243, 237, 237)',
+        color:'rgb(24, 23, 23)',
         fontSize:40,
         lineHeight:48
        }

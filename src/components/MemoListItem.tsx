@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet } from 'react-native'
 
 const MemoListItem = ():JSX.Element => {
     return(
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
         borderBottomWidth:1,
         borderColor:' rgba(0,0,0.15)'
-    
+
     },
     memoListItemTitle:{
         fontSize: 22,

@@ -5,7 +5,7 @@ const Header = ():JSX.Element => {
             <View style={styles.header}>
                    <View style={styles.headerInner}>
                        <Text style={styles.headerTitle}>Memo App</Text>
-                       <Text style={styles.headerRight}>ログアウト</Text> 
+                       <Text style={styles.headerRight}>ログアウト</Text>
                    </View>
              </View>
     )
@@ -15,7 +15,7 @@ const styles =StyleSheet.create({
 header:{
     backgroundColor: 'rgb(12, 100, 233)',
     height: 104,
-    justifyContent:'flex-end'    
+    justifyContent:'flex-end'
  },
  headerInner:{
     alignItems:'center'
@@ -31,7 +31,7 @@ header:{
     fontSize: 22,
     lineHeight: 32,
     fontWeight: 'bold',
-    color: 'rgb(8, 1, 1)'
+    color: 'rgb(241, 235, 235)'
  }
 })
 
