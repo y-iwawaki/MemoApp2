@@ -19,7 +19,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yiwawaki.MemoApp2",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -27,6 +29,14 @@
     "plugins": [
       "expo-router",
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "680f15aa-d550-4f24-89d3-a789bbbc30df"
+      }
+    }
   }
 }
